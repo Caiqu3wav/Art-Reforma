@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+background-image: url(img/estampa-papel-de-parede-textura-branca-marmore.jpg);
+height: 1000px;
+background-repeat: no-repeat;
+background-position: cover;
+background-size: cover;
+}
+
+header{
+    height: 150px;
+    background-color: rgba(189, 186, 186, 0.5);
+    
+}
+
+nav{
+   float: right;
+   position: relative;
+   bottom: 80px;
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+    transition: 0.8s;
+}
+
+.nav_items{
+    padding: 6px;
+    margin-right: 30px;
+    background-color: rgb(246, 245, 245);
+    border-radius: 5px;
+    transition: background-color 0.8s ease;
+}
+ 
+nav ul li a{
+   text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+nav ul li a:hover{
+    text-decoration: none;
+     color: rgb(246, 232, 232);
+ }
+
+nav ul li:hover{
+   
+    border-bottom: black solid 5px;
+    
+}
+.nav_list li:hover{
+    text-decoration: none;
+    background-color: orange;
+ }
+
+ .mobile-menu-icone{
+    display: none;
+ }
+
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width: 730px){
+   
+    .nav_items{
+        display:none;
+    }
+    
+    .mobile-menu-icone{
+        display: block;
+    }
+    .mobile-menu-icone button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
+
+.hi-slide{
+    position: relative;
+    width: 754px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+}
+
+.hi-slide .hi-next{
+    position: absolute;
+    top: 50%;
+}
+
+.hi-slide .hi-next,
+.hi-slide .hi-prev{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover{
+    opacity: 1;
+    background-color: orange;
+}
+
+.hi-slide .hi-prev{
+  left: -60px;
+}
+
+.hi-slide .hi-prev::before{
+    content: '<';
+}
+
+.hi-slide .hi-next{
+    right: -60px;
+}
+
+.hi-slide .hi-next::before{
+    content: '>';
+}
+
+.hi-slide > ul{
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.hi-slide > ul > li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.hi-slide > ul > li > img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.container_um{
+    text-align: center;
+    align-items: center;
+    margin: 70px 0 0 0;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.container_um hr{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.container_dois{
+    margin: 200px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_dois_imagens{
+    display: flex; 
+    gap: 100px;
+}
+
+.container_dois_texto{
+    display: flex;
+    gap: 150px;
+    margin-top: 20px;
+}
