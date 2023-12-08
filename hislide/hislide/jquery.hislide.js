@@ -17,14 +17,16 @@
         $.extend(true, setting, options);
         // 规定好每张图片处于的位置和状态
         var states = [
-            { $zIndex: 1, width: 120, height: 150, top: 69, left: 134, $opacity: 0.2 },
-            { $zIndex: 2, width: 130, height: 170, top: 59, left: 0, $opacity: 0.4 },
-            { $zIndex: 3, width: 170, height: 218, top: 35, left: 110, $opacity: 0.7 },
-            { $zIndex: 4, width: 224, height: 288, top: 0, left: 263, $opacity: 1 },
-            { $zIndex: 3, width: 170, height: 218, top: 35, left: 470, $opacity: 0.7 },
-            { $zIndex: 2, width: 130, height: 170, top: 59, left: 620, $opacity: 0.4 },
-            { $zIndex: 1, width: 120, height: 150, top: 69, left: 500, $opacity: 0.2 }
+            { $zIndex: 1, width: 220, height: 250, top: 69, left: 104, $opacity: 0.2 },
+            { $zIndex: 2, width: 230, height: 270, top: 59, left: 0, $opacity: 0.4 },
+            { $zIndex: 3, width: 270, height: 318, top: 35, left: 85, $opacity: 0.7 },
+            { $zIndex: 4, width: 324, height: 388, top: 0, left: 203, $opacity: 1 },
+            { $zIndex: 3, width: 270, height: 318, top: 35, left: 362, $opacity: 0.7 },
+            { $zIndex: 2, width: 230, height: 270, top: 59, left: 477, $opacity: 0.4 },
+            { $zIndex: 1, width: 220, height: 250, top: 69, left: 385, $opacity: 0.2 }
         ];
+
+        
 
         var $lis = $ele.find('li');
         var timer = null;

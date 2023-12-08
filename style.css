@@ -5,17 +5,15 @@
 }
 
 .main{
-background-image: url(img/estampa-papel-de-parede-textura-branca-marmore.jpg);
-height: 1000px;
-background-repeat: no-repeat;
-background-position: cover;
-background-size: cover;
+
 }
 
 header{
     height: 150px;
     background-color: rgba(189, 186, 186, 0.5);
-    
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav{
@@ -84,14 +82,31 @@ nav ul li:hover{
         text-align: center;
         padding-bottom: 1rem;
     }
+    .mobile-menu .nav-items{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open{
+        display: block;
+    }
 }
+
+.primeira_parte{
+    background-image: url(img/estampa-papel-de-parede-textura-branca-marmore.jpg);
+height: 1000px;
+background-repeat: no-repeat;
+background-position: cover;
+background-size: cover;
+}
+
 
 .hi-slide{
     position: relative;
     width: 754px;
     height: 292px;
     border-radius: 50px;
-    margin: 115px auto 0;
+    margin: 0px auto 0;
+    padding-top: 195px;
 }
 
 .hi-slide .hi-next{
@@ -102,7 +117,7 @@ nav ul li:hover{
 .hi-slide .hi-next,
 .hi-slide .hi-prev{
     position: absolute;
-    top: 50%;
+    top: 110%;
     width: 40px;
     height: 40px;
     margin-top: -20px;
@@ -132,7 +147,7 @@ nav ul li:hover{
 }
 
 .hi-slide .hi-next{
-    right: -60px;
+    right: -20px;
 }
 
 .hi-slide .hi-next::before{
@@ -172,7 +187,7 @@ nav ul li:hover{
 .container_um{
     text-align: center;
     align-items: center;
-    margin: 70px 0 0 0;
+    margin: 340px 0 0 0;
     font-size: 40px;
     font-weight: normal;
 }
@@ -184,7 +199,7 @@ nav ul li:hover{
 }
 
 .container_dois{
-    margin: 200px 0 0 0 ;
+    margin: 70px 0 0 0 ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,3 +216,135 @@ nav ul li:hover{
     gap: 150px;
     margin-top: 20px;
 }
+
+
+.segunda_parte{
+    background-image: url(img/estampa-papel-de-parede-textura-branca-marmore.jpg);
+    background-repeat: no-repeat;
+background-position: cover;
+background-size: cover;
+text-align: center;
+height: 1000px;
+}
+
+.containerh1_segunda_parte{
+ text-align: center;
+}
+
+.segunda_parte h1{
+    display: inline-block;
+    padding: 40px;
+    border-bottom: 4px solid grey;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-size: 45px;
+}
+
+.segunda_parte img{
+    margin: 40px;
+    width: 600px;
+}
+
+.segunda_parte p{
+    font-size: 38px;
+}
+
+.containerp_segunda_parte{
+    text-align: center;
+   }
+   
+
+   #p_dois_segunda_parte{
+    display: inline-block;
+    margin-top: 20px;
+    border-bottom: 4px solid grey;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-size: 35px;
+    font-weight: bold;
+   }
+
+   .terceira_parte{
+    background-image: url(img/estampa-papel-de-parede-textura-branca-marmore.jpg);
+background-repeat: no-repeat;
+background-position: cover;
+background-size: cover;
+height: 950px;
+   }
+
+   .terc_part_div1{
+    color: grey;
+    margin-left: 50px;
+    padding-top: 50px;
+    width: fit-content;
+   }
+
+   .terc_part_div1 > h2 > .bullet-list{
+    margin-right: 5px;
+   }
+
+   .terc_part_div1 h2{
+font-weight: bold;
+font-size: 34px;
+}
+
+   .terc_part_div1 hr{
+    border: 3px solid rgb(184, 160, 124);
+    border-radius: 20px;
+    width: 70%;
+    margin-top: 10px;
+   }
+
+
+
+
+   .terc_part_div3{
+    color: grey;
+    margin-left: 50px;
+    padding-top: 50px;
+    width: fit-content;
+   }
+
+   .terc_part_div3 > h2 > .bullet-list{
+    margin-right: 5px;
+   }
+
+   .terc_part_div3 h2{
+    font-weight: bold;
+    font-size: 34px;
+   }
+
+   .terc_part_div3 hr{
+    border: 3px solid rgb(184, 160, 124);
+    border-radius: 20px;
+    width: 70%;
+    margin-top: 10px;
+   }
+
+   .terc_part_div1{
+
+   }
+
+   .terc_part_div2{
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+   }
+
+   
+   .terc_part_div4{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+       }
+
+       footer{
+        display: flex;
+        justify-content: space-between;
+        background-color: #585757;
+        color: white;
+       }
+
+       footer img{
+        width: 20px;
+       }
